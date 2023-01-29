@@ -1,9 +1,12 @@
-import en_core_web_sm
-nlp = en_core_web_sm.load()
-
 import torch
 from lavis.models import load_model_and_preprocess
 from PIL import Image
+import en_core_web_sm
+
+
+nlp = en_core_web_sm.load()
+
+
 
 # setup device to use
 device = torch.device("cpu")
