@@ -1,7 +1,13 @@
 #Imports
 from my_package.model import ImageCaptioningModel
-from my_package.data import Dataset, Download
-from my_package.data.transforms import FlipImage, RescaleImage, BlurImage, CropImage, RotateImage
+from my_package.data.dataset import Dataset
+from my_package.data.download import Download
+from my_package.data.transforms.blur import BlurImage
+from my_package.data.transforms.crop import CropImage 
+from my_package.data.transforms.flip import FlipImage
+from my_package.data.transforms.rescale import RescaleImage
+from my_package.data.transforms.rotate import RotateImage
+
 import numpy as np
 from PIL import Image
 
