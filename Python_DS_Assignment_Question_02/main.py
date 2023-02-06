@@ -20,7 +20,9 @@ def experiment(annotation_file, captioner, transforms, outputs):
     dataset = Dataset(annotation_file,transforms)
     downloader = Download()
     
-    print("\n\n--------------------------------------ANALYSIS TASK-1 ---------------------------------------------")
+    # Analysis Task-1
+    
+    print("\n\n\t\t--------------------------------------ANALYSIS TASK-1 ---------------------------------------------")
     
     # Enumerate over the data items
     for i,tup in enumerate(dataset):
@@ -37,12 +39,13 @@ def experiment(annotation_file, captioner, transforms, outputs):
             print(i+1,'-',caption["caption"],sep="")
         print()
     
-    print("\n-----All the images are downloaded into path './data/imgs' and captions are displayed successfully-----\n")
+    print("\n---> All the images are downloaded into path './data/imgs' and captions are displayed successfully\n")
                 
     myimage=Image.open(outputs+'/'+"3.jpg")
     
-    print("\n--------------------------------------ANALYSIS TASK-2 ---------------------------------------------\n")    
-
+    # Analysis Task-2
+    
+    print("\n\t\t--------------------------------------ANALYSIS TASK-2 ---------------------------------------------\n")    
 
     transformed_images_path = "Python_DS_Assignment_Question_02/data/transformed-imgs"
 
@@ -74,9 +77,9 @@ def experiment(annotation_file, captioner, transforms, outputs):
                 print("\t\t",end=" ")
                 print(i+1,'-',cap,sep="")  
     
-    print("\n---All the transformed images are downloaded into path './data/transformed-imgs' and the generated captions are displayed successfully---\n")
+    print("\n---> All the transformed images are downloaded into path './data/transformed-imgs' and the generated captions are displayed successfully\n")
     
-    print("\n----------------------------------------END OF MAIN------------------------------------------------")
+    print("\n\t\t----------------------------------------END OF MAIN---------------------------------------------\n")
     
     #Create the instances of the dataset, download
 
